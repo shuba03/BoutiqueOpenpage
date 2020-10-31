@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.15rem;
+    padding-top: 74px;
+    padding-bottom: 66px;
+    color: #fff;
+    background-color: #d3d3d3;
+    text-decoration: none;
+    height: 100%;
+    max-height: 500px;
+    min-height: 380px;
+    z-index: 1;
+}
+.mainBackground video
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainContent{
+    max-width: 650px;
+    width: 100%;
+    z-index: 3;
+}
+.mainMsg{
+    display: block;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.searchBar{
+    position: relative;
+    z-index: 1;
+}
+.searchSpace{
+    background: var(--color-search-bar-background,rgba(255,255,255,0.95));
+    display: flex;
+    border: none;
+    border-radius: 6px;
+    z-index: 1;
+}
+.searchInput {
+    display: block;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #1a1a1a;
+    width: 0;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+}
+input[type=search]{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding: 10px;
+    border-radius: 3px;
+    vertical-align: middle;
+    font-size: 20px;
+    appearance: textfield;
+    font-family: inherit;
+    font-weight: 300px;
+}
+.searchSpace input{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.searchSpace button {
+    border: none;
+    background: 0 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+.searchSpace button #icon{
+    fill: #5e5e5e;
+    width: 25px;
+    height: 25px;
+}
+
+#icon{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-style: normal;
+}
